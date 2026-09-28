@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrick Ramadhani — Network &amp; NOC Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="node"></span>Patrick Ramadhani</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <a href="#top" data-close>Home <span class="tag">00</span></a>
+  <a href="#about" data-close>About <span class="tag">01</span></a>
+  <a href="#experience" data-close>Experience <span class="tag">02</span></a>
+  <a href="#skills" data-close>Skills <span class="tag">03</span></a>
+  <a href="#contact" data-close>Contact <span class="tag">04</span></a>
+  <div class="drawer-social">
+    <a href="https://www.linkedin.com/in/patrick-ramadhani-252986180/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.66 4.77 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg></a>
+    <a href="https://x.com/Patrickr460" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 3H21l-6.7 7.66L22 21h-6.2l-4.86-6.35L5.4 21H3.28l7.16-8.19L3 3h6.35l4.4 5.8L18.9 3zm-1.08 16.2h1.16L7.24 4.72H6l11.82 14.48z"/></svg></a>
+    <a href="https://www.instagram.com/patrickr_460/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2.02.25 2.5.42a5 5 0 0 1 1.8 1.17 5 5 0 0 1 1.17 1.8c.17.48.37 1.33.42 2.5.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 2.02-.42 2.5a5 5 0 0 1-1.17 1.8 5 5 0 0 1-1.8 1.17c-.48.17-1.33.37-2.5.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2.02-.25-2.5-.42a5 5 0 0 1-1.8-1.17 5 5 0 0 1-1.17-1.8c-.17-.48-.37-1.33-.42-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-2.02.42-2.5a5 5 0 0 1 1.17-1.8A5 5 0 0 1 5.66 1.68c.48-.17 1.33-.37 2.5-.42C9.4 1.2 9.8 1.2 12 1.2zm0 1.8c-3.15 0-3.52 0-4.76.07-.96.04-1.48.2-1.82.34a2.9 2.9 0 0 0-1.07.7 2.9 2.9 0 0 0-.7 1.07c-.14.34-.3.86-.34 1.82C3.24 8.48 3.24 8.85 3.24 12s0 3.52.07 4.76c.04.96.2 1.48.34 1.82.16.42.36.75.7 1.07.32.34.65.54 1.07.7.34.14.86.3 1.82.34 1.24.07 1.61.07 4.76.07s3.52 0 4.76-.07c.96-.04 1.48-.2 1.82-.34a2.9 2.9 0 0 0 1.07-.7c.34-.32.54-.65.7-1.07.14-.34.3-.86.34-1.82.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.04-.96-.2-1.48-.34-1.82a2.9 2.9 0 0 0-.7-1.07 2.9 2.9 0 0 0-1.07-.7c-.34-.14-.86-.3-1.82-.34-1.24-.07-1.61-.07-4.76-.07zM12 6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.8a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 0-7.4zm5.7-2a1.28 1.28 0 1 1 0 2.56 1.28 1.28 0 0 1 0-2.56z"/></svg></a>
+    <a href="https://www.facebook.com/PatricKRamadhani23011" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.3c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.4-3.9 4V10.3H7.75v3h2.61V21h3.14z"/></svg></a>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+
+  <section class="hero" id="about">
+    <div class="terminal">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">guest@network:~$</span> <span class="cmd">whoami --verbose</span></div>
+        <div style="margin-top:8px;">patrick.ramadhani</div>
+        <div><span style="color:var(--text-faint);">role:</span> Network &amp; NOC Engineer</div>
+        <div><span style="color:var(--text-faint);">based:</span> Balikpapan, East Kalimantan, Indonesia</div>
+        <div><span style="color:var(--text-faint);">stack:</span> Cisco · MikroTik · Arista · Linux · Ubiquiti</div>
+        <div><span style="color:var(--text-faint);">status:</span> currently at Multinet Perkasa Indonesia<span class="cursor"></span></div>
+      </div>
+    </div>
+
+    <h1>Patrick Ramadhani</h1>
+    <p class="role">Network &amp; NOC Engineer specializing in routing, wireless design, and data center infrastructure — from radio links and ISP access points to nationwide spine‑leaf backbones and Linux‑based systems.</p>
+
+    <p class="bio">Since starting as a radio network intern in 2020, Patrick has moved through field operations, national data center monitoring, and now a combined NOC / systems / pre‑sales engineering role. His work spans keeping regional government network points online, supporting mission‑critical data center sites across Indonesia, and designing and hardening the routing, wireless, and Linux systems behind them.</p>
+
+    <div class="stat-row">
+      <div class="stat"><span class="num">4</span><span class="label">companies across the journey</span></div>
+      <div class="stat"><span class="num">130+</span><span class="label">network points maintained at ICONPLUS</span></div>
+      <div class="stat"><span class="num">21</span><span class="label">NeuCentrIX sites supported nationwide at Telkom</span></div>
+      <div class="stat"><span class="num">~4 yrs</span><span class="label">hands‑on network &amp; NOC experience</span></div>
+    </div>
+
+    <div class="meta-row">
+      <span class="pill"><span class="dot"></span>Currently at Multinet Perkasa Indonesia</span>
+      <span class="pill">Balikpapan, East Kalimantan</span>
+      <span class="pill">Open to connect on LinkedIn</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head"><span class="idx">01</span><h2>Experience</h2></div>
+    <p class="section-sub">Four roles from Jan 2020 to today, spanning radio, ISP field ops, national data centers, and enterprise NOC / systems work.</p>
+
+    <div class="graph-card">
+      <h3>Career timeline (2020 – present) — hover a row for details</h3>
+      <div class="graph-scroll">
+        <div class="gantt-wrap">
+          <svg viewBox="0 0 860 234" width="860" height="234" role="img" aria-label="Gantt chart of career timeline from 2020 to 2026 across four companies, interactive on hover">
+            <!-- year gridlines -->
+            <g stroke="#2a323b" stroke-width="1">
+              <line x1="150" y1="16" x2="150" y2="200"/>
+              <line x1="246" y1="16" x2="246" y2="200"/>
+              <line x1="342" y1="16" x2="342" y2="200"/>
+              <line x1="438" y1="16" x2="438" y2="200"/>
+              <line x1="534" y1="16" x2="534" y2="200"/>
+              <line x1="630" y1="16" x2="630" y2="200"/>
+              <line x1="726" y1="16" x2="726" y2="200"/>
+            </g>
+            <line x1="150" y1="200" x2="822" y2="200" stroke="#3a434d" stroke-width="1"/>
+
+            <!-- year labels -->
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#626b75">
+              <text x="150" y="216">2020</text>
+              <text x="246" y="216">2021</text>
+              <text x="342" y="216">2022</text>
+              <text x="438" y="216">2023</text>
+              <text x="534" y="216">2024</text>
+              <text x="630" y="216">2025</text>
+              <text x="726" y="216">2026</text>
+            </g>
+
+            <!-- row labels -->
+            <g font-family="Space Grotesk, sans-serif" font-size="13.5" fill="#e7e5de">
+              <text x="0" y="42">Comtelindo</text>
+              <text x="0" y="90">ICONPLUS</text>
+              <text x="0" y="138">Telkom</text>
+              <text x="0" y="186">Multinet</text>
+            </g>
+
+            <!-- bars -->
+            <rect id="bar-0" class="gantt-bar" x="150" y="28" width="24" height="20" rx="4" fill="#e8a33d"/>
+            <rect id="bar-1" class="gantt-bar" x="406" y="76" width="240" height="20" rx="4" fill="#e8a33d"/>
+            <rect id="bar-2" class="gantt-bar" x="662" y="124" width="96" height="20" rx="4" fill="#e8a33d"/>
+            <rect id="bar-3" class="gantt-bar" x="774" y="172" width="20" height="20" rx="4" fill="#5fb88a"/>
+            <circle cx="794" cy="182" r="3.2" fill="#5fb88a"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+
+            <!-- gap annotation -->
+            <line x1="174" y1="38" x2="406" y2="86" stroke="#3a434d" stroke-width="1" stroke-dasharray="2 3"/>
+            <text x="205" y="60" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#626b75">gap</text>
+
+            <!-- hover hit-areas — one per row, spanning the full timeline width -->
+            <rect class="gantt-hit" data-idx="0" x="0" y="14" width="822" height="44" fill="transparent"/>
+            <rect class="gantt-hit" data-idx="1" x="0" y="62" width="822" height="44" fill="transparent"/>
+            <rect class="gantt-hit" data-idx="2" x="0" y="110" width="822" height="44" fill="transparent"/>
+            <rect class="gantt-hit" data-idx="3" x="0" y="158" width="822" height="44" fill="transparent"/>
+          </svg>
+
+          <div class="gantt-tooltip" id="ganttTooltip">
+            <div class="gt-head">
+              <span class="gt-role" id="gtRole">—</span>
+              <span class="gt-period" id="gtPeriod"></span>
+            </div>
+            <p class="gt-company" id="gtCompany"></p>
+            <p class="gt-desc" id="gtDesc"></p>
+          </div>
+        </div>
+      </div>
+      <p class="graph-note">Bar length = duration on the job. Green marker = ongoing role (Jul 2026 – present). Dashed line marks the 2020–2022 gap between the internship and ICONPLUS. Hover or tap a row for a quick summary.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="job-card current">
+        <div class="job-titlebar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="job-path">~/experience/multinet-perkasa-indonesia.log</span>
+          <span class="status-badge live"><span class="blip"></span>LIVE</span>
+        </div>
+        <details class="job-toggle" open>
+          <summary>
+            <div class="summary-main">
+              <div class="job-head">
+                <h3>NOC Engineer &amp; System Administrator</h3>
+                <span class="period">Jul 2026 — Present</span>
+              </div>
+              <p class="job-company">Multinet Perkasa Indonesia</p>
+              <div class="domain-tags"><span>#Routing</span><span>#Linux</span><span>#Wireless</span><span>#Security</span></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </summary>
+          <div class="job-body">
+            <p class="job-note">Titled NOC Engineer I / NOC Technician / Junior NOC Engineer. Maintains the security, availability, and stability of enterprise network and server infrastructure to ensure maximum uptime.</p>
+            <ul class="log-list">
+              <li><span class="log-tag ok">OK</span>Provided Layer 1–Layer 2 technical support and incident resolution for customers.</li>
+              <li><span class="log-tag ok">OK</span>Monitored network performance and ran proactive troubleshooting to keep operations optimal.</li>
+              <li><span class="log-tag info">CFG</span>Configured and managed Ethernet/VLAN environments on Alcatel‑Lucent, MikroTik CRS, and Cisco Catalyst switches.</li>
+              <li><span class="log-tag info">CFG</span>Implemented dynamic routing — OSPF, OSPFv3, and BGP (iBGP, eBGP, multihoming) — including route filtering and prepending.</li>
+              <li><span class="log-tag info">CFG</span>Deployed MPLS/VPLS solutions and traffic engineering using MikroTik VPLS pseudowire technology.</li>
+            </ul>
+
+            <div class="subrole">
+              <div class="subrole-head">
+                <h4>System Administrator</h4>
+                <span class="period">Jul 2026 — Present</span>
+              </div>
+              <ul class="log-list">
+                <li><span class="log-tag info">SYS</span>Administered network operating systems including MikroTik RouterOS, Vyatta, and VyOS.</li>
+                <li><span class="log-tag info">SYS</span>Performed Linux system administration via CLI and wrote shell scripts to automate routine tasks.</li>
+                <li><span class="log-tag info">SYS</span>Managed firewall rules with iptables and enterprise email services over SMTP, IMAP, and POP3.</li>
+                <li><span class="log-tag info">SYS</span>Deployed Linux services including Postfix, Dovecot, MariaDB Galera Cluster, FreeRADIUS, BIND9, and Apache2.</li>
+                <li><span class="log-tag info">SYS</span>Built cloud infrastructure using Docker, Open vSwitch, Linux network namespaces, TUN/TAP, and Linux Bridge.</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <div class="subrole-head">
+                <h4>Pre‑Sales Engineer</h4>
+                <span class="period">Jul 2026 — Present</span>
+              </div>
+              <p class="job-note">Conducts technical assessments and designs wireless network solutions ahead of deployment, focused on feasibility and performance validation.</p>
+              <ul class="log-list">
+                <li><span class="log-tag ok">OK</span>Ran site planning and radio coverage mapping using Google Earth to locate optimal access point placement.</li>
+                <li><span class="log-tag ok">OK</span>Designed Point‑to‑Point and Point‑to‑Multipoint topologies with Ubiquiti UISP Design Center.</li>
+                <li><span class="log-tag ok">OK</span>Analyzed line of sight, terrain, and obstacles to ensure reliable wireless links.</li>
+                <li><span class="log-tag ok">OK</span>Simulated coverage and signal strength to validate designs against performance requirements.</li>
+                <li><span class="log-tag ok">OK</span>Prepared topology diagrams, coverage maps, and site reports for implementation teams.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="job-card">
+        <div class="job-titlebar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="job-path">~/experience/telkom-indonesia.log</span>
+          <span class="status-badge done">✓ COMPLETED</span>
+        </div>
+        <details class="job-toggle">
+          <summary>
+            <div class="summary-main">
+              <div class="job-head">
+                <h3>Data Center Engineer</h3>
+                <span class="period">May 2025 — May 2026</span>
+              </div>
+              <p class="job-company">Telkom Indonesia</p>
+              <div class="domain-tags"><span>#DataCenter</span><span>#Monitoring</span><span>#Security</span><span>#MultiVendor</span></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </summary>
+          <div class="job-body">
+            <p class="job-note">NOC Engineer supporting 21 NeuCentrIX (Neural Cloud &amp; Internet Exchange) sites nationwide, including Batu Ampar (Balikpapan) and Sepaku (Penajam Paser Utara). Responsible for stability, performance, and security of mission‑critical data center infrastructure.</p>
+            <ul class="log-list">
+              <li><span class="log-tag ok">OK</span>Produced monthly configuration backup and resource utilization reports across 21 sites, covering memory, CPU, and capacity trends.</li>
+              <li><span class="log-tag ok">OK</span>Monitored infrastructure health, analyzing CPU/memory patterns to prevent performance degradation and forecast capacity.</li>
+              <li><span class="log-tag info">SEC</span>Audited devices to ensure no unauthorized or anomalous local accounts existed, enforcing access control and hardening standards.</li>
+              <li><span class="log-tag info">SEC</span>Maintained audit‑ready documentation for operational and security reviews.</li>
+              <li><span class="log-tag info">NET</span>Operated and monitored a Spine‑Leaf data center topology, ensuring high availability, redundancy, and low‑latency east‑west traffic.</li>
+              <li><span class="log-tag info">NET</span>Managed a multi‑vendor environment of Cisco, Arista, and EdgeCore devices, keeping spine and leaf configuration in sync.</li>
+              <li><span class="log-tag ok">OK</span>Performed proactive anomaly detection and coordinated with field engineers on remediation, maintaining SLA compliance nationwide.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="job-card">
+        <div class="job-titlebar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="job-path">~/experience/iconplus.log</span>
+          <span class="status-badge done">✓ COMPLETED</span>
+        </div>
+        <details class="job-toggle">
+          <summary>
+            <div class="summary-main">
+              <div class="job-head">
+                <h3>Engineer On Site</h3>
+                <span class="period">Sep 2022 — Mar 2025</span>
+              </div>
+              <p class="job-company">ICONPLUS (PLN Icon Plus)</p>
+              <div class="domain-tags"><span>#FieldOps</span><span>#ISP</span><span>#Troubleshooting</span></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </summary>
+          <div class="job-body">
+            <p class="job-note">Handled 130+ network points for Regional Device Organizations belonging to the Balikpapan Communication and Informatics Office (Diskominfo).</p>
+            <ul class="log-list">
+              <li><span class="log-tag ok">OK</span>Performed routine maintenance and care of network devices across each Diskominfo regional point.</li>
+              <li><span class="log-tag ok">OK</span>Carried out physical and system troubleshooting whenever issues arose on the customer side.</li>
+              <li><span class="log-tag info">OPS</span>Installed new internet points as determined by the Balikpapan Communication and Information Service.</li>
+              <li><span class="log-tag ok">OK</span>Ensured customer needs were met on both bandwidth and device requirements.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="job-card">
+        <div class="job-titlebar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="job-path">~/experience/comtelindo-internship.log</span>
+          <span class="status-badge done">✓ COMPLETED</span>
+        </div>
+        <details class="job-toggle">
+          <summary>
+            <div class="summary-main">
+              <div class="job-head">
+                <h3>Radio Network Engineer — Internship</h3>
+                <span class="period">Jan 2020 — Mar 2020</span>
+              </div>
+              <p class="job-company">Comtelindo</p>
+              <div class="domain-tags"><span>#RF</span><span>#Wireless</span><span>#Radio</span></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </summary>
+          <div class="job-body">
+            <ul class="log-list">
+              <li><span class="log-tag info">CFG</span>Installed, configured, and maintained radio devices (Ubiquiti).</li>
+              <li><span class="log-tag ok">OK</span>Used software and diagnostic tools to detect and troubleshoot radio network disturbances, repairing per standard procedure.</li>
+              <li><span class="log-tag ok">OK</span>Assisted the team with routine maintenance of radio and network equipment, including physical cleaning and software updates.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><span class="idx">02</span><h2>Skills</h2></div>
+    <p class="section-sub">Self‑assessed strength across six domains, plus the full toolset behind each one.</p>
+
+    <div class="graph-card">
+      <h3>Skill radar (self‑assessed, scale 1–5) — hover a point for details</h3>
+      <div class="graph-scroll" style="display:flex; justify-content:center;">
+        <div class="radar-wrap">
+          <svg viewBox="0 0 500 400" width="500" height="400" role="img" aria-label="Radar chart of self-assessed skill strength across six domains, interactive on hover">
+            <!-- grid rings -->
+            <g fill="none" stroke="#2a323b" stroke-width="1">
+              <circle cx="250" cy="200" r="22"/>
+              <circle cx="250" cy="200" r="44"/>
+              <circle cx="250" cy="200" r="66"/>
+              <circle cx="250" cy="200" r="88"/>
+              <circle cx="250" cy="200" r="110"/>
+            </g>
+            <!-- axes -->
+            <g stroke="#2a323b" stroke-width="1">
+              <line x1="250" y1="200" x2="250" y2="90"/>
+              <line x1="250" y1="200" x2="345.3" y2="145"/>
+              <line x1="250" y1="200" x2="345.3" y2="255"/>
+              <line x1="250" y1="200" x2="250" y2="310"/>
+              <line x1="250" y1="200" x2="154.7" y2="255"/>
+              <line x1="250" y1="200" x2="154.7" y2="145"/>
+            </g>
+            <!-- data polygon -->
+            <polygon points="250,90 326.2,156 326.2,244 250,288 173.8,244 192.8,167" fill="#e8a33d" fill-opacity="0.18" stroke="#e8a33d" stroke-width="2"/>
+
+            <!-- interactive vertices: big transparent hit area + visible marker -->
+            <circle class="radar-hit" data-idx="0" cx="250" cy="90" r="20" fill="transparent"/>
+            <circle class="radar-hit" data-idx="1" cx="326.2" cy="156" r="20" fill="transparent"/>
+            <circle class="radar-hit" data-idx="2" cx="326.2" cy="244" r="20" fill="transparent"/>
+            <circle class="radar-hit" data-idx="3" cx="250" cy="288" r="20" fill="transparent"/>
+            <circle class="radar-hit" data-idx="4" cx="173.8" cy="244" r="20" fill="transparent"/>
+            <circle class="radar-hit" data-idx="5" cx="192.8" cy="167" r="20" fill="transparent"/>
+
+            <g fill="#e8a33d">
+              <circle class="radar-marker" data-idx="0" cx="250" cy="90" r="3.5"/>
+              <circle class="radar-marker" data-idx="1" cx="326.2" cy="156" r="3.5"/>
+              <circle class="radar-marker" data-idx="2" cx="326.2" cy="244" r="3.5"/>
+              <circle class="radar-marker" data-idx="3" cx="250" cy="288" r="3.5"/>
+              <circle class="radar-marker" data-idx="4" cx="173.8" cy="244" r="3.5"/>
+              <circle class="radar-marker" data-idx="5" cx="192.8" cy="167" r="3.5"/>
+            </g>
+
+            <!-- labels — also hoverable, mapped to the same point via data-idx. Longer labels wrap onto two lines so nothing clips at the canvas edge. -->
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#9aa3ad" text-anchor="middle">
+              <text class="radar-hit" data-idx="0" x="250" y="50">Routing &amp; Switching</text>
+              <text class="radar-hit" data-idx="1" x="375.6" y="123" text-anchor="start">Wireless &amp; RF</text>
+              <text class="radar-hit" data-idx="2" x="375.6" y="269" text-anchor="start">Data Center Ops</text>
+              <text class="radar-hit" data-idx="3" x="250" y="345">Linux &amp; Systems</text>
+              <text class="radar-hit" data-idx="4" x="124.4" y="264" text-anchor="end">
+                <tspan x="124.4">Monitoring &amp;</tspan>
+                <tspan x="124.4" dy="1.25em">Security</tspan>
+              </text>
+              <text class="radar-hit" data-idx="5" x="124.4" y="119" text-anchor="end">
+                <tspan x="124.4">Leadership &amp;</tspan>
+                <tspan x="124.4" dy="1.25em">Comms</tspan>
+              </text>
+            </g>
+          </svg>
+
+          <div class="radar-tooltip" id="radarTooltip">
+            <div class="rt-head">
+              <span class="rt-title" id="rtTitle">—</span>
+              <span class="rt-score" id="rtScore"></span>
+            </div>
+            <p class="rt-desc" id="rtDesc"></p>
+            <ul class="rt-list" id="rtList"></ul>
+          </div>
+        </div>
+      </div>
+      <p class="graph-note">Levels reflect the depth and recency of hands‑on responsibility described in each role — not a certification score. Hover or tap a point to see what's behind it.</p>
+    </div>
+
+
+    <div class="skill-groups">
+
+      <div class="skill-group">
+        <h3>Networking &amp; Routing</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="Telkom · Multinet">Cisco</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">MikroTik</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Alcatel‑Lucent</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">Arista</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">EdgeCore</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">VLAN</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">OSPF / OSPFv3</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">BGP (iBGP/eBGP)</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">MPLS / VPLS</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">Spine‑Leaf</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Wireless &amp; Radio</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="Comtelindo · Multinet">Ubiquiti</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">UISP Design Center</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">PtP / PtMP</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Line of Sight Analysis</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Coverage Mapping</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Systems &amp; Linux</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="Multinet">Linux CLI</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Shell Scripting</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">iptables</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Postfix / Dovecot</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">MariaDB Galera</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">FreeRADIUS</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">BIND9</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Apache2</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">VyOS / Vyatta</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Virtualization &amp; Cloud</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="Multinet">Docker</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Open vSwitch</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Linux Network Namespaces</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">TUN/TAP</span>
+          <span class="tag" tabindex="0" data-tip="Multinet">Linux Bridge</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Operations</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="ICONPLUS · Telkom · Multinet">NOC Monitoring</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">Config Backup &amp; Audit</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">Capacity Reporting</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">Security Hardening</span>
+          <span class="tag" tabindex="0" data-tip="Telkom">SLA Compliance</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Soft Skills</h3>
+        <div class="tag-row">
+          <span class="tag" tabindex="0" data-tip="Across all roles">Leadership</span>
+          <span class="tag" tabindex="0" data-tip="Across all roles">Team Communication</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><span class="idx">03</span><h2>Contact</h2></div>
+    <p class="section-sub">Reach out or follow along on any of these — hover a card to see the link before you click.</p>
+
+    <div class="terminal" style="margin-bottom:22px;">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <div><span class="prompt">guest@network:~$</span> <span class="cmd">scan --channels</span></div>
+        <pre class="scan-output">Discovered 4 open channels:
+
+  linkedin.com    443/tcp  open  https
+  x.com           443/tcp  open  https
+  instagram.com   443/tcp  open  https
+  facebook.com    443/tcp  open  https</pre>
+      </div>
+    </div>
+
+    <div class="port-grid">
+
+      <a class="port-card" href="https://www.linkedin.com/in/patrick-ramadhani-252986180/" target="_blank" rel="noopener noreferrer">
+        <div class="port-top">
+          <span class="port-status"><span class="dot"></span>eth0</span>
+          <span class="ping-val" data-base="14">14 ms</span>
+          <button class="copy-btn" type="button" data-copy="https://www.linkedin.com/in/patrick-ramadhani-252986180/" aria-label="Copy LinkedIn link">⧉</button>
+        </div>
+        <span class="port-icon"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.66 4.77 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg></span>
+        <span class="port-name">LinkedIn</span>
+        <span class="port-handle">/in/patrick-ramadhani</span>
+        <span class="port-reveal"><span class="proto">HTTPS</span><span class="connect">Connect →</span></span>
+      </a>
+
+      <a class="port-card" href="https://x.com/Patrickr460" target="_blank" rel="noopener noreferrer">
+        <div class="port-top">
+          <span class="port-status"><span class="dot"></span>eth1</span>
+          <span class="ping-val" data-base="22">22 ms</span>
+          <button class="copy-btn" type="button" data-copy="https://x.com/Patrickr460" aria-label="Copy X link">⧉</button>
+        </div>
+        <span class="port-icon"><svg viewBox="0 0 24 24"><path d="M18.9 3H21l-6.7 7.66L22 21h-6.2l-4.86-6.35L5.4 21H3.28l7.16-8.19L3 3h6.35l4.4 5.8L18.9 3zm-1.08 16.2h1.16L7.24 4.72H6l11.82 14.48z"/></svg></span>
+        <span class="port-name">X (Twitter)</span>
+        <span class="port-handle">@Patrickr460</span>
+        <span class="port-reveal"><span class="proto">HTTPS</span><span class="connect">Connect →</span></span>
+      </a>
+
+      <a class="port-card" href="https://www.instagram.com/patrickr_460/" target="_blank" rel="noopener noreferrer">
+        <div class="port-top">
+          <span class="port-status"><span class="dot"></span>eth2</span>
+          <span class="ping-val" data-base="18">18 ms</span>
+          <button class="copy-btn" type="button" data-copy="https://www.instagram.com/patrickr_460/" aria-label="Copy Instagram link">⧉</button>
+        </div>
+        <span class="port-icon"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2.02.25 2.5.42a5 5 0 0 1 1.8 1.17 5 5 0 0 1 1.17 1.8c.17.48.37 1.33.42 2.5.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 2.02-.42 2.5a5 5 0 0 1-1.17 1.8 5 5 0 0 1-1.8 1.17c-.48.17-1.33.37-2.5.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2.02-.25-2.5-.42a5 5 0 0 1-1.8-1.17 5 5 0 0 1-1.17-1.8c-.17-.48-.37-1.33-.42-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-2.02.42-2.5a5 5 0 0 1 1.17-1.8A5 5 0 0 1 5.66 1.68c.48-.17 1.33-.37 2.5-.42C9.4 1.2 9.8 1.2 12 1.2zm0 1.8c-3.15 0-3.52 0-4.76.07-.96.04-1.48.2-1.82.34a2.9 2.9 0 0 0-1.07.7 2.9 2.9 0 0 0-.7 1.07c-.14.34-.3.86-.34 1.82C3.24 8.48 3.24 8.85 3.24 12s0 3.52.07 4.76c.04.96.2 1.48.34 1.82.16.42.36.75.7 1.07.32.34.65.54 1.07.7.34.14.86.3 1.82.34 1.24.07 1.61.07 4.76.07s3.52 0 4.76-.07c.96-.04 1.48-.2 1.82-.34a2.9 2.9 0 0 0 1.07-.7c.34-.32.54-.65.7-1.07.14-.34.3-.86.34-1.82.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.04-.96-.2-1.48-.34-1.82a2.9 2.9 0 0 0-.7-1.07 2.9 2.9 0 0 0-1.07-.7c-.34-.14-.86-.3-1.82-.34-1.24-.07-1.61-.07-4.76-.07zM12 6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.8a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 0-7.4zm5.7-2a1.28 1.28 0 1 1 0 2.56 1.28 1.28 0 0 1 0-2.56z"/></svg></span>
+        <span class="port-name">Instagram</span>
+        <span class="port-handle">@patrickr_460</span>
+        <span class="port-reveal"><span class="proto">HTTPS</span><span class="connect">Connect →</span></span>
+      </a>
+
+      <a class="port-card" href="https://www.facebook.com/PatricKRamadhani23011" target="_blank" rel="noopener noreferrer">
+        <div class="port-top">
+          <span class="port-status"><span class="dot"></span>eth3</span>
+          <span class="ping-val" data-base="27">27 ms</span>
+          <button class="copy-btn" type="button" data-copy="https://www.facebook.com/PatricKRamadhani23011" aria-label="Copy Facebook link">⧉</button>
+        </div>
+        <span class="port-icon"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.3c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.4-3.9 4V10.3H7.75v3h2.61V21h3.14z"/></svg></span>
+        <span class="port-name">Facebook</span>
+        <span class="port-handle">Patrick Ramadhani</span>
+        <span class="port-reveal"><span class="proto">HTTPS</span><span class="connect">Connect →</span></span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-scene">
+    <canvas id="pixelScene" width="160" height="80" role="img" aria-label="Pixel art animation of two chibi friends sitting on a ledge, watching a city skyline at sunset"></canvas>
+    <span class="scene-caption">// <span id="sceneClock">--:--:--</span> WITA — city status: all nodes online</span>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="node"></span>Patrick Ramadhani</div>
+      <p>Network &amp; NOC Engineer based in Balikpapan, Indonesia — working across routing, wireless, data center, and Linux infrastructure.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/patrick-ramadhani-252986180/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.66 4.77 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9z"/></svg>LinkedIn</a></li>
+        <li><a href="https://x.com/Patrickr460" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M18.9 3H21l-6.7 7.66L22 21h-6.2l-4.86-6.35L5.4 21H3.28l7.16-8.19L3 3h6.35l4.4 5.8L18.9 3zm-1.08 16.2h1.16L7.24 4.72H6l11.82 14.48z"/></svg>X (Twitter)</a></li>
+        <li><a href="https://www.instagram.com/patrickr_460/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2.02.25 2.5.42a5 5 0 0 1 1.8 1.17 5 5 0 0 1 1.17 1.8c.17.48.37 1.33.42 2.5.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 2.02-.42 2.5a5 5 0 0 1-1.17 1.8 5 5 0 0 1-1.8 1.17c-.48.17-1.33.37-2.5.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2.02-.25-2.5-.42a5 5 0 0 1-1.8-1.17 5 5 0 0 1-1.17-1.8c-.17-.48-.37-1.33-.42-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-2.02.42-2.5a5 5 0 0 1 1.17-1.8A5 5 0 0 1 5.66 1.68c.48-.17 1.33-.37 2.5-.42C9.4 1.2 9.8 1.2 12 1.2zm0 1.8c-3.15 0-3.52 0-4.76.07-.96.04-1.48.2-1.82.34a2.9 2.9 0 0 0-1.07.7 2.9 2.9 0 0 0-.7 1.07c-.14.34-.3.86-.34 1.82C3.24 8.48 3.24 8.85 3.24 12s0 3.52.07 4.76c.04.96.2 1.48.34 1.82.16.42.36.75.7 1.07.32.34.65.54 1.07.7.34.14.86.3 1.82.34 1.24.07 1.61.07 4.76.07s3.52 0 4.76-.07c.96-.04 1.48-.2 1.82-.34a2.9 2.9 0 0 0 1.07-.7c.34-.32.54-.65.7-1.07.14-.34.3-.86.34-1.82.07-1.24.07-1.61.07-4.76s0-3.52-.07-4.76c-.04-.96-.2-1.48-.34-1.82a2.9 2.9 0 0 0-.7-1.07 2.9 2.9 0 0 0-1.07-.7c-.34-.14-.86-.3-1.82-.34-1.24-.07-1.61-.07-4.76-.07zM12 6.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.8a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 0-7.4zm5.7-2a1.28 1.28 0 1 1 0 2.56 1.28 1.28 0 0 1 0-2.56z"/></svg>Instagram</a></li>
+        <li><a href="https://www.facebook.com/PatricKRamadhani23011" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.87.24-1.46 1.5-1.46h1.6V4.3c-.28-.04-1.23-.12-2.34-.12-2.32 0-3.9 1.4-3.9 4V10.3H7.75v3h2.61V21h3.14z"/></svg>Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Patrick Ramadhani. Built for the web, tuned for mobile.</span>
+    <div class="footer-status">
+      <span class="status-badge live"><span class="blip"></span>SYSTEM ONLINE</span>
+      <span class="clock" id="footerClock">--:--:-- WITA</span>
+      <svg class="signal-bars" viewBox="0 0 20 14" width="18" height="12" aria-hidden="true">
+        <rect x="0" y="9" width="3" height="5" rx="1"/>
+        <rect x="5.5" y="6" width="3" height="8" rx="1"/>
+        <rect x="11" y="3" width="3" height="11" rx="1"/>
+        <rect x="16.5" y="0" width="3" height="14" rx="1"/>
+      </svg>
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
